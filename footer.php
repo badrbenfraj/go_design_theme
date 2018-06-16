@@ -15,13 +15,13 @@
 
 	      		<h4 class="h05">Follow Us.</h4>
 
-	      		<ul class="list-links">
-	      			<li><a href="#">Facebook</a></li>
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Instagram</a></li>
-						<li><a href="#">Behance</a></li>
-						<li><a href="#">Dribble</a></li>						
-					</ul>
+	      		<?php
+                wp_nav_menu( array( 
+                    'theme_location' => 'social-menu', 
+                    'menu_class' => 'list-links',
+                    ) 
+                );
+            ?>
 
 	      	</div> <!-- end footer-social -->  
 
@@ -72,7 +72,9 @@
 		   </a>
 		</div>		
    </footer>
-
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
 <?php
 wp_footer();
 ?>

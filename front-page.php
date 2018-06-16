@@ -28,23 +28,18 @@
     </div> <!-- end home-content-tablecell --> 		   
  </div> <!-- end home-content-table -->
 
- <ul class="home-social-list">
-   <li class="animate-intro">
-         <a href="#"><i class="fa fa-facebook-square"></i></a>
-   </li>
-   <li class="animate-intro">
-         <a href="#"><i class="fa fa-twitter"></i></a>
-   </li>
-   <li class="animate-intro">
-         <a href="#"><i class="fa fa-instagram"></i></a>
-   </li>
-  <li class="animate-intro">
-        <a href="#"><i class="fa fa-behance"></i></a>
-  </li>
-   <li class="animate-intro">
-         <a href="#"><i class="fa fa-dribbble"></i></a>
-   </li>	      
-</ul> <!-- end home-social-list -->	
+
+
+            <?php
+                wp_nav_menu( array( 
+                    'theme_location' => 'social-menu', 
+                    'container_class' => 'MediaSocial',
+                    'menu_class' => 'home-social-list animate-intro',
+                    'link_before' => '<span class="sr-text">',
+                    'link_after' => '</span>',
+                    ) 
+                );
+            ?>
 
  <div class="scrolldown">
      <a href="#about" class="scroll-icon smoothscroll">		
@@ -179,9 +174,9 @@
         <div id="folio-wrap" class="bricks-wrapper">					
 
             <div class="brick folio-item">
-            <div class="item-wrap animate-this" data-src="images/portfolio/gallery/g-shutterbug.jpg" data-sub-html="#01" > 	
+            <div class="item-wrap animate-this" data-src="<?php echo get_template_directory_uri()?>/images/portfolio/gallery/g-shutterbug.jpg" data-sub-html="#01" > 	
                <a href="#" class="overlay">
-                   <img src="images/portfolio/shutterbug.jpg" alt="Skaterboy">	                     
+                   <img src="<?php echo get_template_directory_uri()?>/images/portfolio/shutterbug.jpg" alt="Skaterboy">	                     
                   <div class="item-text">
                       <span class="folio-types">
                                 Web Development
@@ -201,9 +196,9 @@
              </div> <!-- end folio-item -->
 
              <div class="brick folio-item">
-            <div class="item-wrap animate-this" data-src="images/portfolio/gallery/g-yellowwall.jpg" data-sub-html="#02"> 	
+            <div class="item-wrap animate-this" data-src="<?php echo get_template_directory_uri()?>/images/portfolio/gallery/g-yellowwall.jpg" data-sub-html="#02"> 	
                <a href="#" class="overlay">
-                   <img src="images/portfolio/yellowwall.jpg" alt="Shutterbug">	                     
+                   <img src="<?php echo get_template_directory_uri()?>/images/portfolio/yellowwall.jpg" alt="Shutterbug">	                     
                   <div class="item-text">
                       <span class="folio-types">
                                 Marketing
@@ -223,9 +218,9 @@
              </div> <!-- end folio-item -->
 
              <div class="brick folio-item">
-            <div class="item-wrap animate-this" data-src="images/portfolio/gallery/g-architecture.jpg" data-sub-html="#03" >   	
+            <div class="item-wrap animate-this" data-src="<?php echo get_template_directory_uri()?>/images/portfolio/gallery/g-architecture.jpg" data-sub-html="#03" >   	
                <a href="#" class="overlay">
-                   <img src="images/portfolio/architecture.jpg" alt="Explore">	                     
+                   <img src="<?php echo get_template_directory_uri()?>/images/portfolio/architecture.jpg" alt="Explore">	                     
                   <div class="item-text">	                     		     					    
                              <span class="folio-types">
                                 Web Design
@@ -245,9 +240,9 @@
              </div> <!-- end folio-item -->
 
              <div class="brick folio-item">
-            <div class="item-wrap animate-this"  data-src="images/portfolio/gallery/g-minimalismo.jpg"  data-sub-html="#04" >
+            <div class="item-wrap animate-this"  data-src="<?php echo get_template_directory_uri()?>/images/portfolio/gallery/g-minimalismo.jpg"  data-sub-html="#04" >
                <a href="#" class="overlay">
-                   <img src="images/portfolio/minimalismo.jpg" alt="Minimalismo">	                     
+                   <img src="<?php echo get_template_directory_uri()?>/images/portfolio/minimalismo.jpg" alt="Minimalismo">	                     
                   <div class="item-text">	     					    
                              <span class="folio-types">
                                 Web Design
@@ -267,9 +262,9 @@
              </div> <!-- end folio-item -->
 
              <div class="brick folio-item">
-            <div class="item-wrap animate-this"  data-src="images/portfolio/gallery/g-skaterboy.jpg"  data-sub-html="#05" >  	
+            <div class="item-wrap animate-this"  data-src="<?php echo get_template_directory_uri()?>/images/portfolio/gallery/g-skaterboy.jpg"  data-sub-html="#05" >  	
                <a href="#" class="overlay">
-                   <img src="images/portfolio/skaterboy.jpg" alt="Bicycle">	                     
+                   <img src="<?php echo get_template_directory_uri()?>/images/portfolio/skaterboy.jpg" alt="Bicycle">	                     
                   <div class="item-text">	     					    
                              <span class="folio-types">
                                 Branding
@@ -289,9 +284,9 @@
              </div> <!-- end folio-item -->
         
              <div class="brick folio-item">
-            <div class="item-wrap animate-this"  data-src="images/portfolio/gallery/g-salad.jpg"  data-sub-html="#06">     	
+            <div class="item-wrap animate-this"  data-src="<?php echo get_template_directory_uri()?>/images/portfolio/gallery/g-salad.jpg"  data-sub-html="#06">     	
                <a href="#" class="overlay">
-                   <img src="images/portfolio/salad.jpg" alt="Salad">	                     
+                   <img src="<?php echo get_template_directory_uri()?>/images/portfolio/salad.jpg" alt="Salad">	                     
                   <div class="item-text">	     					    
                              <span class="folio-types">
                                 Branding
@@ -341,7 +336,7 @@
            </p> 
 
            <div class="testimonial-author">
-                 <img src="images/avatars/user-02.jpg" alt="Author image">
+                 <img src="<?php echo get_template_directory_uri()?>/images/avatars/user-02.jpg" alt="Author image">
                  <div class="author-info">
                      Steve Jobs
                      <span class="position">CEO, Apple.</span>
@@ -357,7 +352,7 @@
            </p>
 
             <div class="testimonial-author">
-                 <img src="images/avatars/user-03.jpg" alt="Author image">
+                 <img src="<?php echo get_template_directory_uri()?>/images/avatars/user-03.jpg" alt="Author image">
                  <div class="author-info">
                      John Doe
                      <span>CEO, ABC Corp.</span>
@@ -382,17 +377,17 @@
      <div class="col-twelve">
 
          <div class="client-lists owl-carousel">
-               <div><img src="images/clients/mozilla.png" alt=""></div>
-               <div><img src="images/clients/bower.png" alt=""></div>
-               <div><img src="images/clients/codepen.png" alt=""></div>
-               <div><img src="images/clients/envato.png" alt=""></div>
-               <div><img src="images/clients/firefox.png" alt=""></div>
-               <div><img src="images/clients/grunt.png" alt=""></div>
-               <div><img src="images/clients/evernote.png" alt=""></div>
-               <div><img src="images/clients/github.png" alt=""></div>
-               <div><img src="images/clients/joomla.png" alt=""></div>
-               <div><img src="images/clients/jQuery.png" alt=""></div>
-               <div><img src="images/clients/wordpress.png" alt=""></div>
+               <div><img src="<?php echo get_template_directory_uri()?>/images/clients/mozilla.png" alt=""></div>
+               <div><img src="<?php echo get_template_directory_uri()?>/images/clients/bower.png" alt=""></div>
+               <div><img src="<?php echo get_template_directory_uri()?>/images/clients/codepen.png" alt=""></div>
+               <div><img src="<?php echo get_template_directory_uri()?>/images/clients/envato.png" alt=""></div>
+               <div><img src="<?php echo get_template_directory_uri()?>/images/clients/firefox.png" alt=""></div>
+               <div><img src="<?php echo get_template_directory_uri()?>/images/clients/grunt.png" alt=""></div>
+               <div><img src="<?php echo get_template_directory_uri()?>/images/clients/evernote.png" alt=""></div>
+               <div><img src="<?php echo get_template_directory_uri()?>/images/clients/github.png" alt=""></div>
+               <div><img src="<?php echo get_template_directory_uri()?>/images/clients/joomla.png" alt=""></div>
+               <div><img src="<?php echo get_template_directory_uri()?>/images/clients/jQuery.png" alt=""></div>
+               <div><img src="<?php echo get_template_directory_uri()?>/images/clients/wordpress.png" alt=""></div>
          </div>
          
      </div> <!-- end col-twelve -->
@@ -478,8 +473,8 @@
       <div class="cinfo">
             <h6>Where to Find Us</h6>
             <p>
-             1600 Amphitheatre Parkway<br>
-             Mountain View, CA<br>
+             1600 Amphitheatre Parkway<br><br>
+             Mountain View, CA<br><br>
              94043 US
          </p>
         </div> <!-- end cinfo -->
@@ -487,7 +482,7 @@
         <div class="cinfo">
             <h6>Email Us At</h6>
             <p>
-                someone@infinitysite.com<br>
+                someone@infinitysite.com<br><br>
                 info@infinitysite.com			     
             </p>
         </div> <!-- end cinfo -->
@@ -495,8 +490,8 @@
         <div class="cinfo">
             <h6>Call Us At</h6>
             <p>
-                Phone: (+63) 555 1212<br>
-                Mobile: (+63) 555 0100<br>
+                Phone: (+63) 555 1212<br><br>
+                Mobile: (+63) 555 0100<br><br>
                   Fax: (+63) 555 0101
             </p>
         </div>

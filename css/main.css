@@ -882,6 +882,29 @@ input::-moz-focus-inner {
   background: transparent;
   color: #151515;
 }
+/*---------social media icons---------*/
+.sr-text{
+  display: none;
+}
+div.MediaSocial ul li a:before{
+font-family: FontAwesome;
+-webkit-font-smoothing: antialiazed;
+}
+div.MediaSocial li a[href*="facebook.com"]::before{
+  content: '\f082';
+}
+div.MediaSocial li a[href*="twitter.com"]::before{
+  content: '\f099';
+}
+div.MediaSocial li a[href*="instagram.com"]::before{
+  content: '\f16d';
+}
+div.MediaSocial li a[href*="behance.net"]::before{
+  content: '\f1b4';
+}
+div.MediaSocial li a[href*="dribbble.com"]::before{
+  content: '\f17d';
+}
 
 /* line definition style 
  * ----------------------------------------------- */

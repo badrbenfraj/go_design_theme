@@ -18,7 +18,8 @@
 
     function go_design_menu(){
         register_nav_menus(array(
-            'header-menu' => __('Header Menu', 'Go_Design')
+            'header-menu' => __('Header Menu', 'Go_Design'),
+            'social-menu' => __('Social Menu', 'Go_Design')
         ));
     }
     add_action('init','go_design_menu');

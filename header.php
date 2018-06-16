@@ -48,23 +48,16 @@
 				<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->
 			</p>			
 
-			<ul class="header-social-list">
-	         <li>
-	         	<a href="#"><i class="fa fa-facebook-square"></i></a>
-	         </li>
-	         <li>
-	         	<a href="#"><i class="fa fa-twitter"></i></a>
-	         </li>
-	         <li>
-	         	<a href="#"><i class="fa fa-instagram"></i></a>
-	         </li>
-            <li>
-            	<a href="#"><i class="fa fa-behance"></i></a>
-            </li>
-	         <li>
-	         	<a href="#"><i class="fa fa-dribbble"></i></a>
-	         </li>	         
-	      </ul>		
+             <?php
+                wp_nav_menu( array( 
+                    'theme_location' => 'social-menu', 
+                    'container_class' => 'MediaSocial',
+                    'menu_class' => 'header-social-list',
+                    'link_before' => '<span class="sr-text">',
+                    'link_after' => '</span>',
+                    ) 
+                );
+            ?>	
 
 		</nav>
 
