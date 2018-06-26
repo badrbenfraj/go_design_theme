@@ -1,6 +1,5 @@
 <footer>
      	<div class="footer-main">
-
    		<div class="row">  
 
 	      	<div class="col-five tab-full footer-about">       
@@ -29,7 +28,7 @@
 
 	      		<h4 class="h05">Get Notified.</h4>
 
-	      		<p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa.</p>
+	      		<p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa.</p><br>
 
 	      		<div class="subscribe-form">
 	      	

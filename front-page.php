@@ -27,9 +27,6 @@
         </div> <!-- end row --> 
     </div> <!-- end home-content-tablecell --> 		   
  </div> <!-- end home-content-table -->
-
-
-
             <?php
                 wp_nav_menu( array( 
                     'theme_location' => 'social-menu', 
@@ -40,7 +37,6 @@
                     ) 
                 );
             ?>
-
  <div class="scrolldown">
      <a href="#about" class="scroll-icon smoothscroll">		
         Scroll Down		   	
@@ -49,7 +45,6 @@
  </div>			
 
 </section> <!-- end home -->
-
 
 <!-- about
 ================================================== -->
@@ -70,7 +65,6 @@
 
 </section> <!-- end about -->
 
-
 <!-- about
 ================================================== -->
 <section id="services">
@@ -90,19 +84,15 @@
 </div> <!-- end row -->
 
 <div class="row services-content">
-
     <div class="services-list block-1-2 block-tab-full group">
-
        <div class="bgrid service-item animate-this">	
-
            <span class="icon"><i class="icon-paint-brush"></i></span>            
-
-         <div class="service-content">
+        <div class="service-content">
              <h3 class="h05">Branding</h3>
 
              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
               </p>	         		
-          </div> 	         	 
+        </div> 	         	 
 
          </div> <!-- end bgrid -->
 
@@ -471,7 +461,7 @@
       <h5>Contact Information</h5>
 
       <div class="cinfo">
-            <h6>Where to Find Us</h6>
+            <h6>Where to Find Us</h6><br><br>
             <p>
              1600 Amphitheatre Parkway<br><br>
              Mountain View, CA<br><br>
@@ -480,7 +470,7 @@
         </div> <!-- end cinfo -->
 
         <div class="cinfo">
-            <h6>Email Us At</h6>
+            <h6>Email Us At</h6><br><br>
             <p>
                 someone@infinitysite.com<br><br>
                 info@infinitysite.com			     
@@ -488,7 +478,7 @@
         </div> <!-- end cinfo -->
 
         <div class="cinfo">
-            <h6>Call Us At</h6>
+            <h6>Call Us At</h6><br><br>
             <p>
                 Phone: (+63) 555 1212<br><br>
                 Mobile: (+63) 555 0100<br><br>

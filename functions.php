@@ -1,4 +1,8 @@
 <?php  
+
+    require get_template_directory().'/inc/options.php';
+
+
     function go_design_styles(){
         wp_enqueue_style('main', get_template_directory_uri().'/css/main.css');
         wp_enqueue_style('base', get_template_directory_uri().'/css/base.css');
